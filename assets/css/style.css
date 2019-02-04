@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  }
+
+#doc {
+padding-left: 100px;
+}
+
+#heading {
+  background-color: orange;
+  color: whitesmoke;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  width: 25%;
+  height: 60px;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#instructions {
+  background-color: beige;
+  color: green;
+  width: 41%;
+  height: 230px;
+  border: 2px solid black;
+  padding: 10px 5px 30px 5px;
+  margin-bottom: 20px;
+}
+
+#number-to-guess {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  padding-left: 100px;
+}
+
+#compNumber {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid black;
+  width:20%;
+  height: 80px;
+  float:left;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+#totalScore {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid black;
+  width:20%;
+  height: 80px;
+  float:left;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+#crystalGems {
+clear: left;
+border: 2px solid black;
+padding-left: 40px;
+padding-top; 10px;
+width: 41%;
+}
+
+#yourTotScore {
+  background-color: teal;
+  color: white;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  width: 25%;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 8px;
+}
+
+#yourNumber {
+  background-color: teal;
+  color: white;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  width: 25%;
+  height: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 8px;
+}

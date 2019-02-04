@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RMS Crystals Collector Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body id="doc">
+
+  <section id="box1">
+    <div id="heading">
+      <h1>Crystal Collector</h1>
+    </div>
+  </section>
+
+  <section id="instructions">
+    <div>
+      <p>
+        You will be given a randome nmber at the start of the game.
+        <br>
+        <br>
+        There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total
+        score.
+        <br>
+        <br>
+        You win the game by matching your total score to random number, you lose the game if your total score goes
+        above the random number.
+        <br>
+        <br>
+        The value of each crystal is hidden from you until you click on it.
+        <br>
+        <br>
+        Each time you when the game starts, the game will change the value of each crystal
+        <br>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <!-- this is the score to guess-->
+    <div class="score">
+      <div id="compNumber" class="col-4">
+        <h3>Computer Generated Number: <br><br><span id="number-to-guess"></span></h3>
+      </div>
+      <div id="totalScore" class="col-4">
+        <h3>Wins:</h3>
+        <br>
+        <h3>Losses:</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="crystalGems">
+    <div class="crystals">
+
+      <img class="blueGem" src="assets/images/blue_gem.jpg" alt="Need Blue Gem" width="100px height=100px">
+
+      <img class="orangeGem" src="assets/images/orange_gem.jpg" alt="Need Orange Gem" width="100px height=100px">
+
+      <img class="pinkGem" src="assets/images/pink_gem.jpg" alt="Need Pink Gem" width="100px height=100px">
+
+      <img class="redGem" src="assets/images/red_gem.jpg" alt="Need Red Gem" width="100px height=100px">
+
+      <img class="purpleGem" src="assets/images/purple_gem.jpg" alt="Need Purple Gem" width="100px height=100px">
+
+    </div>
+  </section>
+
+  <section id="yourBox">
+    <div id="yourTotScore">
+      <h1>Your total score is:</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="score2">
+      <div id="yourNumber" class="col-4">
+        <h3>?</h3>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!--  javascript-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!--on click event-->
+  <script type="text/javascript">
+
+
+    //This is where I am setting the variable for the random number
+    var targetNumber = Math.floor(Math.random() * 50) + 1;
+    console.log(targetNumber);
+
+    //matching the random number to the target number
+    $("#number-to-guess").text(targetNumber);
+
+    var counter = 0;
+
+    var numberOptions = [10, 11, 7,3,2];
+    var increment = numberOptions[Math.round(Math.random())];
+
+    $(".blueGem").on("click", function () {
+      counter += increment;
+
+      alert("New score: " + counter);
+
+      if (counter === targetNumber) {
+        alert("You Win!");
+      }
+
+      else if (counter >= targetNumber) {
+        alert("You Lose!!");
+      }
+
+    });
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
