@@ -14,78 +14,69 @@
 
 <body id="doc">
 
-  <section id="box1">
-    <div id="heading">
-      <h1>Crystal Collector</h1>
+  <!--find and image and add to this div-->
+  <div class="card">
+    <img class="headerimage" card-img-top border" src="assets/images/collectorLogo2.jpg" alt="Crystal Colloector Logo">
+    <div id="cardBody">
+      <!--listing out the instructions of the game-->
+      <p class="cardText">
+        You will be given a random nmber at the start of the game.</p>
+      <br>
+      <p class="cardText">There are four crystals below. By clicking on a crystal you will add a specific amount of
+        points to your total
+        score. </p>
+      <br>
+      <p class="cardText">You win the game by matching your total score to random number, you lose the game if your
+        total score goes
+        above the random number. </p>
+      <br>
+      <p class="cardText">The value of each crystal is hidden from you until you click on it.</p>
+      <br>
+      <p class="cardText">Each time you when the game starts, the game will change the value of each crystal</p>
+      <br>
     </div>
+  </div>
   </section>
 
-  <section id="instructions">
-    <div>
-      <p>
-        You will be given a randome nmber at the start of the game.
-        <br>
-        <br>
-        There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total
-        score.
-        <br>
-        <br>
-        You win the game by matching your total score to random number, you lose the game if your total score goes
-        above the random number.
-        <br>
-        <br>
-        The value of each crystal is hidden from you until you click on it.
-        <br>
-        <br>
-        Each time you when the game starts, the game will change the value of each crystal
-        <br>
-      </p>
-    </div>
-  </section>
 
-  <section>
-    <!-- this is the score to guess-->
-    <div class="score">
-      <div id="compNumber" class="col-4">
-        <h3>Computer Generated Number: <br><br><span id="number-to-guess"></span></h3>
-      </div>
-      <div id="totalScore" class="col-4">
-        <h3>Wins:</h3>
-        <br>
-        <h3>Losses:</h3>
-      </div>
+  <!-- this is the score to guess-->
+  <div class="score">
+    <div id="compNumber">
+      <h3>Computer Generated Number: <br><br><span id="number-to-guess"></span></h3>
     </div>
-  </section>
+    <div id="totalScore">
+      <h3>Wins:<br><span id="win"></span></h3>
+      <br>
+      <h3>Losses:<br><span id="lost"></span></h3>
+    </div>
+  </div>
 
-  <section id="crystalGems">
+  <!--Gems are listed here in a container-->
+  <div class="container">
+    <div id="crystals">
+      <img class="blueGem" src="assets/images/blue_gem.jpg" alt="Need Blue Gem" width=100px>
+    </div>
     <div class="crystals">
-
-      <img class="blueGem" src="assets/images/blue_gem.jpg" alt="Need Blue Gem" width="100px height=100px">
-
-      <img class="orangeGem" src="assets/images/orange_gem.jpg" alt="Need Orange Gem" width="100px height=100px">
-
-      <img class="pinkGem" src="assets/images/pink_gem.jpg" alt="Need Pink Gem" width="100px height=100px">
-
-      <img class="redGem" src="assets/images/red_gem.jpg" alt="Need Red Gem" width="100px height=100px">
-
-      <img class="purpleGem" src="assets/images/purple_gem.jpg" alt="Need Purple Gem" width="100px height=100px">
-
+      <img class="orangeGem" src="assets/images/orange_gem.jpg" alt="Need Orange Gem" width=100px>
     </div>
-  </section>
+    <div class="crystals">
+      <img class="pinkGem" src="assets/images/pink_gem.jpg" alt="Need Pink Gem" width=100px>
+    </div>
+    <div class="crystals">
+      <img class="purpleGem" src="assets/images/purple_gem.jpg" alt="Need Purple Gem" width=100px>
+    </div>
+  </div>
 
-  <section id="yourBox">
+  <div class="yourBox">
     <div id="yourTotScore">
-      <h1>Your total score is:</h1>
+      <h1>Your total score is:<spand id="yts"></spand>
+      </h1>
     </div>
-  </section>
+    <div id="yourNumber">
+      <h3>Your Numbers:<br><span id="runningTotal"></span></h3>
+    </div>
+  </div>
 
-  <section>
-    <div class="score2">
-      <div id="yourNumber" class="col-4">
-        <h3>?</h3>
-      </div>
-    </div>
-  </section>
 
 
 
@@ -94,43 +85,9 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!--on click event-->
-  <script type="text/javascript">
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 
-    //This is where I am setting the variable for the random number
-    var targetNumber = Math.floor(Math.random() * 50) + 1;
-    console.log(targetNumber);
-
-    //matching the random number to the target number
-    $("#number-to-guess").text(targetNumber);
-
-    var counter = 0;
-
-    var numberOptions = [10, 11, 7,3,2];
-    var increment = numberOptions[Math.round(Math.random())];
-
-    $(".blueGem").on("click", function () {
-      counter += increment;
-
-      alert("New score: " + counter);
-
-      if (counter === targetNumber) {
-        alert("You Win!");
-      }
-
-      else if (counter >= targetNumber) {
-        alert("You Lose!!");
-      }
-
-    });
-
-
-
-
-
-
-
-  </script>
 </body>
 
 </html>
