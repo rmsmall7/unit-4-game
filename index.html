@@ -11,14 +11,18 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <link rel="stylesheet"
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Merienda|Special+Elite" rel="stylesheet">
 </head>
 
 <body id="doc">
 
   <!--find and image and add to this div-->
   <div class="card">
-    <img class="headerimage" card-img-top border" src="assets/images/collectorLogo.jpg" alt="Crystal Colloector Logo">
+    <!--<img class="headerimage" card-img-top border" src="assets/images/collectorLogo.jpg" alt="Crystal Colloector Logo">-->
+    <header id="head">
+      <h1>Crystal Collector</h1>
+    </header>
     <div id="cardBody">
       <!--listing out the instructions of the game-->
       <p class="cardText">
@@ -42,38 +46,38 @@
 
 
   <!-- this is the score to guess-->
-  
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">
-        <div id="targetNumber" class="numberContainer float-left">
-          <H5>Number to Match: <span id="ntg"></span></H2>
-        </div>
-        <div id="counter" class="numberContainer float-right">
-          <h5>Wins: <span id="wins"></span></h5>
-          <h5>Loss: <span id="loss"></span></h5>
-        </div>
+
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <div id="targetNumber" class="numberContainer float-left">
+        <H5>Number to Match: <span id="ntg"></span></H2>
+      </div>
+      <div id="counter" class="numberContainer float-right">
+        <h5>Wins: <span id="wins"></span></h5>
+        <h5>Loss: <span id="loss"></span></h5>
+      </div>
+    </li>
+
+
+    <!--Gems are listed here in a container-->
+    <div id="gemRow">
+      <li class="list-group-item crystalContainer">
+        <img src="assets/images/blue_gem.png" class="crystal rounded float-left red" alt="red">
+        <img src="assets/images/orange_gem.png" class="crystal rounded float-left yellow" alt="yellow">
+        <img src="assets/images/pink_gem.png" class="crystal rounded float-left blue" alt="blue">
+        <img src="assets/images/purple_gem.png" class="crystal rounded float-left green" alt="green">
       </li>
+    </div>
 
-
-  <!--Gems are listed here in a container-->
-  <div id="gemRow">
-    <li class="list-group-item crystalContainer">
-      <img src="assets/images/blue_gem.png" class="crystal rounded float-left red" alt="red">
-      <img src="assets/images/orange_gem.png" class="crystal rounded float-left yellow" alt="yellow">
-      <img src="assets/images/pink_gem.png" class="crystal rounded float-left blue" alt="blue">
-      <img src="assets/images/purple_gem.png" class="crystal rounded float-left green" alt="green">
-    </li>
+    <div id="totScore">
+      <li class="list-group-item test yts">Your Total Score is: </li>
+      <li>
+        <div id="score"></div>
+      </li>
+  </ul>
   </div>
 
-  <div id="totScore">
-    <li class="list-group-item test yts">Your Total Score is: </li>
-    <li>
-      <div id="score"></div>
-    </li>
-    </ul>
-  </div>
 
- 
 
 
 

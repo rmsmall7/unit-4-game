@@ -4,7 +4,7 @@
 }
 
 html {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', "sans-serif";
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -21,11 +21,8 @@ border: 2px solid purple;
 background-color: #EE82EE;;
 }
 
-.headerimage {
-  height:80px;
- }
-
 .card {
+  font-family: 'Merienda', cursive;
   width: 80%;
   margin: 0 auto;
   background-color: #9370DB;  
@@ -33,13 +30,22 @@ background-color: #EE82EE;;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+#head {
+  font-family:'Gloria Hallelujah', cursive;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+  color: 	#FFD700;
+}
 
 p{
-  color: black;
-  font-size: 18px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .list-group-item {
+  font-family: 'Special Elite', cursive;
   background-color: #EE82EE;
   margin-bottom: 10px;
 }
@@ -92,9 +98,9 @@ p{
   margin:0 5%;
   margin-left: 275px;
   font-weight: 400;
-  font-size: 35px;
+  font-size: 45px;
   padding-top:10px;
   text-align: center;
-  color:black;
+  color:	black;
   margin-bottom: 10px;
 }
