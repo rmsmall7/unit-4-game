@@ -37,10 +37,12 @@ $(document).ready(function() {
       $("#score").html(score);
       if(score == targetNumber) {
           wins++;
+          alert("You Won!!");
           initialize();
       }
       else if (score > targetNumber) {
           loss++;
+          alert("Try Again")
           initialize();
       }
   });

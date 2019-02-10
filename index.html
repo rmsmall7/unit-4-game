@@ -3,23 +3,21 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>RMS Crystals Collector Game</title>
+  <title>RMS Crystal Collector Game</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet"
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Merienda|Special+Elite" rel="stylesheet">
+  <!--this is the link to google fonts-->
+  <link rel="stylesheet" <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Merienda|Special+Elite"
+    rel="stylesheet">
 </head>
 
 <body id="doc">
-
-  <!--find and image and add to this div-->
   <div class="card">
-    <!--<img class="headerimage" card-img-top border" src="assets/images/collectorLogo.jpg" alt="Crystal Colloector Logo">-->
+    <!--<img class="headerimage" card-img-top border" src="assets/images/collectorLogo.jpg" alt="Crystal Colloector Logo">  I did not need this but saved it just in case-->
     <header id="head">
       <h1>Crystal Collector</h1>
     </header>
@@ -42,8 +40,6 @@
       <br>
     </div>
   </div>
-  </section>
-
 
   <!-- this is the score to guess-->
 
@@ -69,17 +65,14 @@
       </li>
     </div>
 
+    <!--this box will contain the running total from user's clicks-->
     <div id="totScore">
       <li class="list-group-item test yts">Your Total Score is: </li>
       <li>
         <div id="score"></div>
       </li>
+    </div>
   </ul>
-  </div>
-
-
-
-
 
   <!--  javascript-->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -87,7 +80,5 @@
   <!--on click event-->
   <script type="text/javascript" src="assets/javascript/game.js"></script>
 
-
 </body>
-
 </html>
