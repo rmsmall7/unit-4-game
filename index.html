@@ -6,49 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>RMS Crystal Collector Game</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <!--this is the link to google fonts-->
-  <link rel="stylesheet" <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Merienda|Special+Elite"
-    rel="stylesheet">
+  <!--this is the link to google fonts  I wanted to use various font types in the document specifically "Gloria Hallelujah" and "Merienda"-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Merienda|Special+Elite" rel="stylesheet">
 </head>
 
 <body id="doc">
   <div class="card">
-    <!--<img class="headerimage" card-img-top border" src="assets/images/collectorLogo.jpg" alt="Crystal Colloector Logo">  I did not need this but saved it just in case-->
     <header id="head">
       <h1>Crystal Collector</h1>
     </header>
     <div id="cardBody">
-      <!--listing out the instructions of the game-->
+      <!--This div stores the instructions of the game  will update the font in css.  I added breaks between each paragraphs because they look jumbled on the document without them.  Not sure if there is an eaiser way to do this and will research later.  for now the breaks listed below works and I like they way the look on the page-->
       <p class="cardText">
-        You will be given a random nmber at the start of the game.</p>
+        You will be given a random number at the start of the game.
+      </p>
+
       <br>
+
       <p class="cardText">There are four crystals below. By clicking on a crystal you will add a specific amount of
-        points to your total
-        score. </p>
+        points to your total score.
+      </p>
+
       <br>
+
       <p class="cardText">You win the game by matching your total score to random number, you lose the game if your
-        total score goes
-        above the random number. </p>
+        total score goes above the random number.
+      </p>
+
       <br>
-      <p class="cardText">The value of each crystal is hidden from you until you click on it.</p>
+
+      <p class="cardText">The value of each crystal is hidden from you until you click on it.
+      </p>
+
       <br>
-      <p class="cardText">Each time you when the game starts, the game will change the value of each crystal</p>
+
+      <p class="cardText">Each time you when the game starts, the game will change the value of each crystal.
+      </p>
       <br>
     </div>
   </div>
 
-  <!-- this is the score to guess-->
+  <!-- the section is for the random number, scores, gems and user guess total-->
 
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">
-      <div id="targetNumber" class="numberContainer float-left">
+  <ul>
+    <li class="numberToGuess">
+      <div class="numberContainer">
         <H5>Number to Match: <span id="ntg"></span></H2>
       </div>
-      <div id="counter" class="numberContainer float-right">
+      <div id="counter" class="numberContainer">
         <h5>Wins: <span id="wins"></span></h5>
         <h5>Loss: <span id="loss"></span></h5>
       </div>
@@ -58,16 +65,18 @@
     <!--Gems are listed here in a container-->
     <div id="gemRow">
       <li class="list-group-item crystalContainer">
-        <img src="assets/images/blue_gem.png" class="crystal rounded float-left red" alt="red">
-        <img src="assets/images/orange_gem.png" class="crystal rounded float-left yellow" alt="yellow">
-        <img src="assets/images/pink_gem.png" class="crystal rounded float-left blue" alt="blue">
-        <img src="assets/images/purple_gem.png" class="crystal rounded float-left green" alt="green">
+        <img src="assets/images/blue_gem.png" class="crystal blue" alt="blue">
+        <img src="assets/images/orange_gem.png" class="crystal orange" alt="orange">
+        <img src="assets/images/pink_gem.png" class="crystal pink" alt="pink">
+        <img src="assets/images/purple_gem.png" class="crystal purple" alt="purple">
       </li>
     </div>
 
-    <!--this box will contain the running total from user's clicks-->
+
+
+    <!--div that the users total score will be displayed.  the score is calculated by clicking on the gems-->
     <div id="totScore">
-      <li class="list-group-item test yts">Your Total Score is: </li>
+      <li class="yts">Your Total Score is: </li>
       <li>
         <div id="score"></div>
       </li>
@@ -81,4 +90,5 @@
   <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
+
 </html>

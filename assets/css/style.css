@@ -1,10 +1,9 @@
 * {
- 
   margin-left: 50px;
 }
 
 html {
-  font-family:'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', "sans-serif";
+  font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', "sans-serif";
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -12,95 +11,101 @@ html {
   width: 75%;
   align-content: center;
 }
+
 #doc {
-margin-top:20px;
-margin-left: 250px;
-align-content: center;
-justify-content: space-around;
-border: 2px solid purple;
-background-color: #EE82EE;;
+  margin-top: 20px;
+  margin-left: 250px;
+  align-content: center;
+  justify-content: space-around;
+  border: 2px solid purple;
+  background-color: #EE82EE;
 }
 
 .card {
   font-family: 'Merienda', cursive;
   width: 80%;
   margin: 0 auto;
-  background-color: #9370DB;  
+  background-color: #9370DB;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 #head {
-  font-family:'Gloria Hallelujah', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
   font-size: 40px;
   margin-bottom: 30px;
   font-weight: bolder;
-  color: 	#FFD700;
+  color: #FFD700;
 }
 
-p{
+p {
   color: white;
   font-size: 25px;
   font-weight: bold;
 }
 
-.list-group-item {
+.numberToGuess {
   font-family: 'Special Elite', cursive;
   background-color: #EE82EE;
   margin-bottom: 10px;
+  height: 75px;
+  width: 40%;
+  background: #EE82EE;
+  margin: 0 5%;
+  font-weight: 100;
+  font-size: 30px;
+  padding-top: 10px;
+  text-align: center;
+  padding-left: 200px;
 }
 
 
 .crystal {
-  height: 100px;
+  height: 75px;
   width: 100px;
-  float:left;
-  
+  float: left;
 }
 
-.crystalContainer{
-  background-color:#9932CC;
+.crystalContainer {
+  background-color: #9932CC;
   display: flex;
   justify-content: space-around;
+  padding-top: 5px;
+  margin-top: 50px;
 }
 
-.numberContainer{
-  height:100px;
-  width:40%;
-  background: #EE82EE;;
-  margin:0 5%;
-  font-weight: 400;
-  font-size: 40px;
-  padding-top:10px;
+#counter {
+  font-size: 30px;
   text-align: center;
+  padding-left: 100px;
+  padding-top: 20px;
 }
 
-#counter{
-  font-size: 40px;
-}
 .yts {
-  margin-top:15px;
-  height:75px;
-  width:40%;
-  background: #EE82EE;;
-  margin:0 5%;
+  margin-top: 15px;
+  height: 75px;
+  width: 40%;
+  background: #EE82EE;
+  margin: 0 5%;
   margin-left: 275px;
   font-weight: 400;
-  font-size: 25px;
-  padding-top:20px;
+  font-size: 35px;
+  padding-top: 20px;
   text-align: center;
+  font-weight: bold;
 }
 
-#score{
-  height:75px;
-  width:40%;
+#score {
+  height: 75px;
+  width: 40%;
   background: #EE82EE;
-  margin:0 5%;
+  margin: 0 5%;
   margin-left: 275px;
   font-weight: 400;
   font-size: 45px;
-  padding-top:10px;
+  padding-top: 10px;
   text-align: center;
-  color:	black;
-  margin-bottom: 10px;
+  color: black;
+  margin-bottom: 2px;
 }
